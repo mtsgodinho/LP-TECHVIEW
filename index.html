@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechView | Landing Pages Premium para Experts</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              techBlue: '#00D1FF',
+              deepDark: '#020617',
+              navyDark: '#0A1128',
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              tech: ['Space Grotesk', 'sans-serif'],
+            },
+            boxShadow: {
+              neon: '0 0 15px rgba(0, 209, 255, 0.4)',
+              neonStrong: '0 0 25px rgba(0, 209, 255, 0.6)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #020617;
+        color: white;
+        overflow-x: hidden;
+      }
+      .glow-text {
+        text-shadow: 0 0 10px rgba(0, 209, 255, 0.5);
+      }
+      .glass-card {
+        background: rgba(10, 17, 40, 0.7);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(0, 209, 255, 0.1);
+      }
+      .animate-float {
+        animation: float 6s ease-in-out infinite;
+      }
+      @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-20px); }
+      }
+      .gradient-border {
+        position: relative;
+        border-radius: 0.5rem;
+        background: linear-gradient(to right, #00D1FF, #0055FF);
+        padding: 1px;
+      }
+      .gradient-border-content {
+        background: #020617;
+        border-radius: 0.5rem;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
